@@ -14,6 +14,7 @@ for word in words[:]:
         words.insert(0, word)
 ```
 
+### break, continue 
 
 ## Functions
 
