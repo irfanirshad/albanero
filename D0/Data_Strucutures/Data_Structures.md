@@ -104,6 +104,7 @@ matrix = [
 ]
 list(zip(*matrix))
 ```
+```
 
 
 ### del statement
@@ -129,26 +130,26 @@ Can create an initiliazed set with {} like
 ```
 basket = {'apple' , 'banana' , 'orange'}
 flag = 'apple' in basket # Fast membership testing
+```
 
-
-# set operation on unique from two words
+#### set operation on unique from two words
 a = set('abracadabra')
 
-# unique letters in a
+#### unique letters in a
 print(a) # {'a', 'r', 'b', 'c', 'd'}
 
 b = set('alacazam')
 
-# letters in a but not in b
+#### letters in a but not in b
 print(a - b) # {'r', 'd', 'b'}
 
-# letters in a or b or both
+#### letters in a or b or both
 print(a | b)
 
-# letters strictly in a and b
+#### letters strictly in a and b
 print(a & b)
 
-# letters in a or b but not both
+#### letters in a or b but not both
 print(a ^ b) # {'r', 'd', 'b', 'm', 'z', 'l'}
 ```
 

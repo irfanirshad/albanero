@@ -1,0 +1,288 @@
+[
+    {
+        "label": "weakref,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "weakref.",
+        "description": "weakref.",
+        "detail": "weakref.",
+        "documentation": {}
+    },
+    {
+        "label": "check",
+        "importPath": "validation",
+        "description": "validation",
+        "isExtraImport": true,
+        "detail": "validation",
+        "documentation": {}
+    },
+    {
+        "label": "check",
+        "importPath": "validation",
+        "description": "validation",
+        "isExtraImport": true,
+        "detail": "validation",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "astuple",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "astuple",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "inspect",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "inspect",
+        "description": "inspect",
+        "detail": "inspect",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 6,
+        "importPath": "D0.Weak_References.main",
+        "description": "D0.Weak_References.main",
+        "peekOfCode": "class A:\n    def __init__(self, value):\n        self.value = value \n    def __repr__(self):\n        return str(self.value)\na_obj_ref_1 = A(10)\nstrong_dict_reference  = {1 : a_obj_ref_1}\nprint(strong_dict_reference)\ndel a_obj_ref_1\n# del strong_dict_reference[]",
+        "detail": "D0.Weak_References.main",
+        "documentation": {}
+    },
+    {
+        "label": "a_obj_ref_1",
+        "kind": 5,
+        "importPath": "D0.Weak_References.main",
+        "description": "D0.Weak_References.main",
+        "peekOfCode": "a_obj_ref_1 = A(10)\nstrong_dict_reference  = {1 : a_obj_ref_1}\nprint(strong_dict_reference)\ndel a_obj_ref_1\n# del strong_dict_reference[]\nprint(f\" Strong dict reference -> \\t {strong_dict_reference}\")\ngc.collect() \nprint(a_obj_ref_1)\na_obj_ref_2 = A(10)\nd = weakref.WeakValueDictionary()",
+        "detail": "D0.Weak_References.main",
+        "documentation": {}
+    },
+    {
+        "label": "a_obj_ref_2",
+        "kind": 5,
+        "importPath": "D0.Weak_References.main",
+        "description": "D0.Weak_References.main",
+        "peekOfCode": "a_obj_ref_2 = A(10)\nd = weakref.WeakValueDictionary()\nd[1] = a_obj_ref_2\ndel a_obj_ref_2\nprint(d)\ngc.collect()\nprint(f\"After gc collect {d}\")\nprint(strong_dict_reference)\nd[pid] ",
+        "detail": "D0.Weak_References.main",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "D0.Weak_References.main",
+        "description": "D0.Weak_References.main",
+        "peekOfCode": "d = weakref.WeakValueDictionary()\nd[1] = a_obj_ref_2\ndel a_obj_ref_2\nprint(d)\ngc.collect()\nprint(f\"After gc collect {d}\")\nprint(strong_dict_reference)\nd[pid] \np= Process()",
+        "detail": "D0.Weak_References.main",
+        "documentation": {}
+    },
+    {
+        "label": "d[1]",
+        "kind": 5,
+        "importPath": "D0.Weak_References.main",
+        "description": "D0.Weak_References.main",
+        "peekOfCode": "d[1] = a_obj_ref_2\ndel a_obj_ref_2\nprint(d)\ngc.collect()\nprint(f\"After gc collect {d}\")\nprint(strong_dict_reference)\nd[pid] \np= Process()\npid = p.start()",
+        "detail": "D0.Weak_References.main",
+        "documentation": {}
+    },
+    {
+        "label": "pid",
+        "kind": 5,
+        "importPath": "D0.Weak_References.main",
+        "description": "D0.Weak_References.main",
+        "peekOfCode": "pid = p.start()\nd = {}\nd[pid] = p",
+        "detail": "D0.Weak_References.main",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "D0.Weak_References.main",
+        "description": "D0.Weak_References.main",
+        "peekOfCode": "d = {}\nd[pid] = p",
+        "detail": "D0.Weak_References.main",
+        "documentation": {}
+    },
+    {
+        "label": "d[pid]",
+        "kind": 5,
+        "importPath": "D0.Weak_References.main",
+        "description": "D0.Weak_References.main",
+        "peekOfCode": "d[pid] = p",
+        "detail": "D0.Weak_References.main",
+        "documentation": {}
+    },
+    {
+        "label": "f1",
+        "kind": 2,
+        "importPath": "D2.Dataclasses.example.1_stars",
+        "description": "D2.Dataclasses.example.1_stars",
+        "peekOfCode": "def f1(stars: int) -> int:\n    check(1 <= stars <= 10, f\"f1 : {stars}\")\n    return stars + 5\ndef f2(stars: int) -> int:\n    check(1 <= stars <= 10, f\"f2 : {stars}\")\n    return stars * 5\nif __name__ == \"__main__\":\n    stars1 = 6\n    print(stars1)\n    print(f1(stars1))",
+        "detail": "D2.Dataclasses.example.1_stars",
+        "documentation": {}
+    },
+    {
+        "label": "f2",
+        "kind": 2,
+        "importPath": "D2.Dataclasses.example.1_stars",
+        "description": "D2.Dataclasses.example.1_stars",
+        "peekOfCode": "def f2(stars: int) -> int:\n    check(1 <= stars <= 10, f\"f2 : {stars}\")\n    return stars * 5\nif __name__ == \"__main__\":\n    stars1 = 6\n    print(stars1)\n    print(f1(stars1))\n    print(f2(stars1))\n    stars2 = 11\n    print(f1(stars2))",
+        "detail": "D2.Dataclasses.example.1_stars",
+        "documentation": {}
+    },
+    {
+        "label": "Stars",
+        "kind": 6,
+        "importPath": "D2.Dataclasses.example.2_encapsulation",
+        "description": "D2.Dataclasses.example.2_encapsulation",
+        "peekOfCode": "class Stars:\n    def __init__(self, n_stars: int):\n        self._number = n_stars\n        self.condition()\n    def condition(self, s: int = None):\n        if s:\n            check(1 <= s <= 10, f\"{self} : {s}\")\n        else:\n            check(1 <= self._number <= 10, f\"{self}\")\n    # Prevent external modification",
+        "detail": "D2.Dataclasses.example.2_encapsulation",
+        "documentation": {}
+    },
+    {
+        "label": "check",
+        "kind": 2,
+        "importPath": "D2.Dataclasses.example.validation",
+        "description": "D2.Dataclasses.example.validation",
+        "peekOfCode": "def check(exp: bool, err_mssg: str, msg2: str = \"Out of range\") -> None:\n    if not exp:\n        print(f\"Type failure: {err_mssg} {msg2}\")\n        # Normally you'd use assert to throw an exception..",
+        "detail": "D2.Dataclasses.example.validation",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "kind": 6,
+        "importPath": "D2.Dataclasses.example2.after_dataclasses",
+        "description": "D2.Dataclasses.example2.after_dataclasses",
+        "peekOfCode": "class Comment:\n    id: \"int\" = field()\n    text: \"str\" = field(default=\"\")\n    replies: \"list[int]\" = field(default_factory=list, compare=False, hash=False, repr=False)\ndef main():\n    comment = Comment(1, \"I just wanted to say this is cool\")\n    print(comment) \n    # comment.id = 3 # this is error because its immutable. \n    # printing out the obj\n    # print(Comment.__annotations__)",
+        "detail": "D2.Dataclasses.example2.after_dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "D2.Dataclasses.example2.after_dataclasses",
+        "description": "D2.Dataclasses.example2.after_dataclasses",
+        "peekOfCode": "def main():\n    comment = Comment(1, \"I just wanted to say this is cool\")\n    print(comment) \n    # comment.id = 3 # this is error because its immutable. \n    # printing out the obj\n    # print(Comment.__annotations__)\n    # print(astuple(comment))\n    # print(asdict(comment))\n    #inspect\n    pprint(inspect.getmembers(Comment, inspect.isfunction))",
+        "detail": "D2.Dataclasses.example2.after_dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "ManualComment",
+        "kind": 6,
+        "importPath": "D2.Dataclasses.example2.before_dataclasses",
+        "description": "D2.Dataclasses.example2.before_dataclasses",
+        "peekOfCode": "class ManualComment:\n    def __init__(self, id: int, text: str) -> None:\n        self.__id : int = id # __ to make it immutable and then add @property\n        self.__text : str = text\n    # properties ..this way people can read but cant write to these properties\n    @property\n    def id(self) -> int:\n        return self.__id    \n    @property\n    def text(self) -> str:",
+        "detail": "D2.Dataclasses.example2.before_dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "D2.Dataclasses.example3.main",
+        "description": "D2.Dataclasses.example3.main",
+        "peekOfCode": "class Person:\n    name: str\n    address: str\n    active: bool = True\n    email_address: \"list[str]\" = field(default_factory=list)\n    id: str = field(init=False, default_factory=generate_id)\n    _search_string: str = field(init=False, repr=False)\n    def __post_init__(self) -> None:\n        self._search_string = f\"{self.name} {self.address}\" #why is it showing an error here?\ndef main() -> None:",
+        "detail": "D2.Dataclasses.example3.main",
+        "documentation": {}
+    },
+    {
+        "label": "generate_id",
+        "kind": 2,
+        "importPath": "D2.Dataclasses.example3.main",
+        "description": "D2.Dataclasses.example3.main",
+        "peekOfCode": "def generate_id() -> str:\n    return \"\".join(random.choices(string.ascii_uppercase, k=12))\n'''\n    id : str = field(default_factory=list)\n    - lets say the user tries to modify his id which is possible but we dont want it\n    - so here is where we add in the init=False to the field() //exclude arguments from initializer\n    - sometimes you want to generate a value from other instance variables.. here you use __post_init__() . We implement search_string for a user\n    - Now, say you want to change this publicly available search_string to internal, say, protected or private; here we are making it protected\n        - for protected use single underscore _protected\n        - for private use double underscore __private",
+        "detail": "D2.Dataclasses.example3.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "D2.Dataclasses.example3.main",
+        "description": "D2.Dataclasses.example3.main",
+        "peekOfCode": "def main() -> None:\n    person = Person(\"Irfan\", address = \"Madhapur Hyderabad\", active=False)\n    # person._search_string = \"Yoo im changing this\"0\n    # person.name = \"Sagar\"\n    print(person)\nif __name__ == \"__main__\":\n    main()",
+        "detail": "D2.Dataclasses.example3.main",
+        "documentation": {}
+    }
+]

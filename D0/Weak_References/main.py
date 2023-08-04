@@ -23,7 +23,7 @@ collection, but doing so is a bit clunky
 
 [Answer from Python3 cookbook(D.Beazly)] 
 
-
+weak
 2) 
 
 '''
@@ -60,3 +60,17 @@ print(f"After gc collect {d}")
 
 
 print(strong_dict_reference)
+
+
+d[pid] 
+
+
+
+
+
+
+p= Process()
+pid = p.start()
+
+d = {}
+d[pid] = p
