@@ -4,12 +4,13 @@ import time
 Simple multithreaded program to calculate sum of square of numbers. 
 '''
 
-
+# keep in mind that , asyncio is slower than normal multithreaded
 async def sum_square_num(number):
     res = 0 
     for num in number:
         print(num*num)
         res += num*num
+        # asyncio.sleep(3)
     print(f"SUM is ============> \t {res}")
     
 
