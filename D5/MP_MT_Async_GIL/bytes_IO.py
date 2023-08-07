@@ -8,8 +8,8 @@ def create_file():
         f.write(b"Hello World \n")
 
 
-def stringIO_file():
-    op = StringIO()
+# def stringIO_file():
+#     op = StringIO()
     
     
     with StringIO() as s:
@@ -23,7 +23,9 @@ def bytesIO_function():
     with BytesIO() as f:
         f.write(b"Hello world from BytesIO \n")
         f.write(b"74 65 73 74 69 6e 67 20 73 74 75 66 66 20 6f 75 74")
-
+    
+    val = f.getvalue()
+    print(val)
 
 
 
@@ -48,7 +50,7 @@ output.close()
 
 def main():        
     create_file() # plain old with open() file...
-
+    bytesIO_function()
 
 
 '''from io import BytesIO

@@ -1,4 +1,4 @@
-import threading
+import multiprocessing
 import time
 '''
 Simple multithreaded program to calculate sum of square of numbers. 
@@ -14,8 +14,8 @@ def sum_square_num(number):
     
 
 def main():
-    numbers1 = [*range(1,10,1)]
-    numbers2 = [*range(10,200,10)]
+    numbers1 = [*range(1,100000)]
+    numbers2 = [*range(10,200000)]
     
     start = time.time()
     sum_square_num(numbers1)
@@ -24,20 +24,24 @@ def main():
     
     time1 = end- start 
     
-    t1 = threading.Thread(target=sum_square_num, args=(numbers1,))
-    t2 = threading.Thread(target=sum_square_num, args=(numbers2,))
+    p1 = multiprocessing.Process(target=sum_square_num, args=(numbers1,))
+    p2 = multiprocessing.Process(target=sum_square_num, args=(numbers2,))
     
     start = time.time()
-    t1.start()
-    t2.start()
+    p1.start()
+    p2.start()
     end = time.time()
+    time2 = end - start
     
-    t1.join()
-    t2.join()
+    print(f"PRocess of process is {p1.pid}")
+    print(f"PRocess of process is {p2.pid}")
     
-    print(f"Without multithreading execution time is {time1} \n")
+    p1.join()
+    p2.join()
+    
+    print(f"Without multiprocessing execution time is {time1} \n")
 
-    print(f"With multithreading execution time is {end - start} \n")
+    print(f"With multiprocessing execution time is {time2} \n")
     
 
 if __name__ == '__main__':
