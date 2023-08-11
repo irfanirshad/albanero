@@ -3,6 +3,8 @@ aTLEAST 2 DISTINGUISHABLE KINDS OF ERRORS:
     - Syntax Errors
     - Exceptions
 
+Over 66 built-in exceptions
+
 ### Syntax Errors
 
 eg: Indentation Error(invalid syntax)
@@ -114,5 +116,31 @@ A try statement may have more than one except clause for different exceptions..
         pass
 ```
 
+## Custom User-Defined Exceptions
+
+### Re-raising 
+
+Classic way of raising an exception, is to use raise without arguments, this will raise the last exception that took place ...
+
+```
+try:
+    something to do here
+except Exception as error:
+    logging.error(error)
+    raise exeption as e:
+```
+
+
+### conclusion:
+
+User-defined exceptions are created to force certain constraints on the values of the variables. To create a User-defined Exception, we have to create a class that implements the Exception class.
+
+We can raise(throw) these exceptions using the raise keyword. These exceptions can be caught in the try-except block, just like common exceptions.
+
+In some conditions, we have multiple errors to handle in the same class. In such situations, we create a base class, which is further implemented by other Exception classes.
+
+Classes implementing Exceptions are the same as normal classes. Thus they can be customized and used as one.
+
+We can also use Standard Exception classes for implementation where the error doesn't seem to fall into any particular category.
 
 

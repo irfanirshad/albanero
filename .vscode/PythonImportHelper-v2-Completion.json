@@ -9,6 +9,15 @@
         "documentation": {}
     },
     {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
         "label": "check",
         "importPath": "validation",
         "description": "validation",
@@ -124,6 +133,132 @@
         "documentation": {}
     },
     {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "StringIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "StringIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "StringIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "stringIO_file",
+        "importPath": "D5.MP_MT_Async_GIL.bytes_IO",
+        "description": "D5.MP_MT_Async_GIL.bytes_IO",
+        "isExtraImport": true,
+        "detail": "D5.MP_MT_Async_GIL.bytes_IO",
+        "documentation": {}
+    },
+    {
+        "label": "multiprocessing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Resource",
+        "importPath": "flask_restful",
+        "description": "flask_restful",
+        "isExtraImport": true,
+        "detail": "flask_restful",
+        "documentation": {}
+    },
+    {
+        "label": "reqparse",
+        "importPath": "flask_restful",
+        "description": "flask_restful",
+        "isExtraImport": true,
+        "detail": "flask_restful",
+        "documentation": {}
+    },
+    {
+        "label": "Todo",
+        "importPath": "app.models.todo",
+        "description": "app.models.todo",
+        "isExtraImport": true,
+        "detail": "app.models.todo",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
         "label": "A",
         "kind": 6,
         "importPath": "D0.Weak_References.main",
@@ -196,6 +331,87 @@
         "documentation": {}
     },
     {
+        "label": "NotFoundError",
+        "kind": 6,
+        "importPath": "D1.Errors and Exceptions.better_exception_1",
+        "description": "D1.Errors and Exceptions.better_exception_1",
+        "peekOfCode": "class NotFoundError(Exception):\n    pass\nclass NotAuthorizedError(Exception):\n    pass\nimport sqlite3\ndef fetch_blog_new(id: str):\n    try:\n        # connect to database\n        con = sqlite3.connect('application.db')\n        cur = con.cursor()",
+        "detail": "D1.Errors and Exceptions.better_exception_1",
+        "documentation": {}
+    },
+    {
+        "label": "NotAuthorizedError",
+        "kind": 6,
+        "importPath": "D1.Errors and Exceptions.better_exception_1",
+        "description": "D1.Errors and Exceptions.better_exception_1",
+        "peekOfCode": "class NotAuthorizedError(Exception):\n    pass\nimport sqlite3\ndef fetch_blog_new(id: str):\n    try:\n        # connect to database\n        con = sqlite3.connect('application.db')\n        cur = con.cursor()\n        # execute query and fetch the data\n        cur.execute(f\"SELECT * FROM blogs where id = {id}\")",
+        "detail": "D1.Errors and Exceptions.better_exception_1",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_blog_old",
+        "kind": 2,
+        "importPath": "D1.Errors and Exceptions.better_exception_1",
+        "description": "D1.Errors and Exceptions.better_exception_1",
+        "peekOfCode": "def fetch_blog_old(id: str):\n    try:\n        # connect to database\n        conn = sqlite3.connect('application.db')\n        cur = con.cursor()\n        # execute query and fetch the data\n        cur.execute(f\"SELECT * FROM blogs where id = {id}\")\n        result = cur.fetchone()\n        data = blog_lst_to_json(result)\n        return data",
+        "detail": "D1.Errors and Exceptions.better_exception_1",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_blog_new",
+        "kind": 2,
+        "importPath": "D1.Errors and Exceptions.better_exception_1",
+        "description": "D1.Errors and Exceptions.better_exception_1",
+        "peekOfCode": "def fetch_blog_new(id: str):\n    try:\n        # connect to database\n        con = sqlite3.connect('application.db')\n        cur = con.cursor()\n        # execute query and fetch the data\n        cur.execute(f\"SELECT * FROM blogs where id = {id}\")\n        result = cur.fetchone()\n        if result is None:\n            raise NotFoundError(f'Unable to find id={id}')",
+        "detail": "D1.Errors and Exceptions.better_exception_1",
+        "documentation": {}
+    },
+    {
+        "label": "SQLit",
+        "kind": 6,
+        "importPath": "D1.Errors and Exceptions.better_exception_2",
+        "description": "D1.Errors and Exceptions.better_exception_2",
+        "peekOfCode": "class SQLite",
+        "detail": "D1.Errors and Exceptions.better_exception_2",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_blog_new",
+        "kind": 2,
+        "importPath": "D1.Errors and Exceptions.better_exception_2",
+        "description": "D1.Errors and Exceptions.better_exception_2",
+        "peekOfCode": "def fetch_blog_new(id: str):\n    try:\n        # connect to database\n        con = sqlite3.connect('application.db')\n        cur = con.cursor()\n        # execute query and fetch the data\n        cur.execute(f\"SELECT * FROM blogs where id = {id}\")\n        result = cur.fetchone()\n        if result is None:\n            raise NotFoundError(f'Unable to find id={id}')",
+        "detail": "D1.Errors and Exceptions.better_exception_2",
+        "documentation": {}
+    },
+    {
+        "label": "UserNotFoundException",
+        "kind": 6,
+        "importPath": "D1.Errors and Exceptions.err",
+        "description": "D1.Errors and Exceptions.err",
+        "peekOfCode": "class UserNotFoundException(RuntimeError):\n    def __init__(self,email=None):\n        super().__init__(f\"Can't find the user with the ID: {email} ...\")\nlogBook = { \n    \"aditya@mycompany\" : \"Aditya Verma\",\n    \"snehaj@mycompany\" : \"Sneha Joshi\",\n    \"nidhi20@mycompany\" : \"Nidhi Kapoor\"\n}\nclass Login(UserNotFoundException):\n    def display(self, email):",
+        "detail": "D1.Errors and Exceptions.err",
+        "documentation": {}
+    },
+    {
+        "label": "Login",
+        "kind": 6,
+        "importPath": "D1.Errors and Exceptions.err",
+        "description": "D1.Errors and Exceptions.err",
+        "peekOfCode": "class Login(UserNotFoundException):\n    def display(self, email):\n        if email in logBook:\n            print(logBook.get(email))\n        else:\n            raise UserNotFoundException(email)\ntry:\n    temp = Login()\n    temp.display(\"irfan@albanero.io\")\n    temp.display(\"nidhi20@mycompany\")",
+        "detail": "D1.Errors and Exceptions.err",
+        "documentation": {}
+    },
+    {
+        "label": "logBook",
+        "kind": 5,
+        "importPath": "D1.Errors and Exceptions.err",
+        "description": "D1.Errors and Exceptions.err",
+        "peekOfCode": "logBook = { \n    \"aditya@mycompany\" : \"Aditya Verma\",\n    \"snehaj@mycompany\" : \"Sneha Joshi\",\n    \"nidhi20@mycompany\" : \"Nidhi Kapoor\"\n}\nclass Login(UserNotFoundException):\n    def display(self, email):\n        if email in logBook:\n            print(logBook.get(email))\n        else:",
+        "detail": "D1.Errors and Exceptions.err",
+        "documentation": {}
+    },
+    {
         "label": "f1",
         "kind": 2,
         "importPath": "D2.Dataclasses.example.1_stars",
@@ -263,7 +479,7 @@
         "kind": 6,
         "importPath": "D2.Dataclasses.example3.main",
         "description": "D2.Dataclasses.example3.main",
-        "peekOfCode": "class Person:\n    name: str\n    address: str\n    active: bool = True\n    email_address: \"list[str]\" = field(default_factory=list)\n    id: str = field(init=False, default_factory=generate_id)\n    _search_string: str = field(init=False, repr=False)\n    def __post_init__(self) -> None:\n        self._search_string = f\"{self.name} {self.address}\" #why is it showing an error here?\ndef main() -> None:",
+        "peekOfCode": "class Person:\n    name: str\n    address: str\n    active: bool = True\n    email_address: \"list[str]\" = field(default_factory=list)\n    id: str = field(init=False, default_factory=generate_id)\n    _search_string: str = field(init=False, repr=False)\n    def __post_init__(self) -> None:\n        self._search_string = f\"{self.name} {self.address}\" # type: ignore #why is it showing an error here?\ndef main() -> None:",
         "detail": "D2.Dataclasses.example3.main",
         "documentation": {}
     },
@@ -283,6 +499,186 @@
         "description": "D2.Dataclasses.example3.main",
         "peekOfCode": "def main() -> None:\n    person = Person(\"Irfan\", address = \"Madhapur Hyderabad\", active=False)\n    # person._search_string = \"Yoo im changing this\"0\n    # person.name = \"Sagar\"\n    print(person)\nif __name__ == \"__main__\":\n    main()",
         "detail": "D2.Dataclasses.example3.main",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "kind": 6,
+        "importPath": "D5.Context_Managers.main",
+        "description": "D5.Context_Managers.main",
+        "peekOfCode": "class File(object):\n    def __init__(self, filename, action):\n        self.file = open (filename, action)\n    def __enter__(self):\n        return self.file\n    def __exit__(self, type, Traceback):\n        self.file.close()\nwith File(\"test.txt\",'w') as file_obj:\n    file_obj.append(\"Apple\") # type: ignore",
+        "detail": "D5.Context_Managers.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.asyncio_file",
+        "description": "D5.MP_MT_Async_GIL.asyncio_file",
+        "peekOfCode": "def main():\n    numbers1 = [*range(1,50)]\n    numbers2 = [*range(50,100)]\n    start = time.time()\n    #\n    sum_square_num(numbers1)\n    sum_square_num(numbers2)\n    end = time.time()\n    time1 = end- start \n    print(f\"Without ASYNCIO execution time is {time1} \\n\")",
+        "detail": "D5.MP_MT_Async_GIL.asyncio_file",
+        "documentation": {}
+    },
+    {
+        "label": "create_file",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.bytes_IO",
+        "description": "D5.MP_MT_Async_GIL.bytes_IO",
+        "peekOfCode": "def create_file():\n    with open(\"test1.txt\", \"wb\") as f:\n        f.write(b\"Hello World \\n\")\n        f.write(b\"Hello World \\n\")\n        f.write(b\"Hello World \\n\")\n# def stringIO_file():\n#     op = StringIO()\n    with StringIO() as s:\n        s.write(\"Helloo\")\n        s.write(\"Helloo again from StringIO \\n\")",
+        "detail": "D5.MP_MT_Async_GIL.bytes_IO",
+        "documentation": {}
+    },
+    {
+        "label": "bytesIO_function",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.bytes_IO",
+        "description": "D5.MP_MT_Async_GIL.bytes_IO",
+        "peekOfCode": "def bytesIO_function():\n    with BytesIO() as f:\n        f.write(b\"Hello world from BytesIO \\n\")\n        f.write(b\"74 65 73 74 69 6e 67 20 73 74 75 66 66 20 6f 75 74\")\n    val = f.getvalue()\n    print(val)\n'''\noutput = StringIO.StringIO()\noutput.write('First line.\\n')\nprint >>output, 'Second line.'",
+        "detail": "D5.MP_MT_Async_GIL.bytes_IO",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.bytes_IO",
+        "description": "D5.MP_MT_Async_GIL.bytes_IO",
+        "peekOfCode": "def main():        \n    create_file() # plain old with open() file...\n    bytesIO_function()\n'''from io import BytesIO\nfrom io import StringIO\nfrom D5.MP_MT_Async_GIL.bytes_IO import stringIO_file\ndef create_file():\n    with open(\"../data/test_file.txt\", \"wb\") as f:\n        f.write(b\"test string 1\\n\")\n        f.write(b\"test string 2\\n\")",
+        "detail": "D5.MP_MT_Async_GIL.bytes_IO",
+        "documentation": {}
+    },
+    {
+        "label": "create_file",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.bytes_IO",
+        "description": "D5.MP_MT_Async_GIL.bytes_IO",
+        "peekOfCode": "def create_file():\n    with open(\"../data/test_file.txt\", \"wb\") as f:\n        f.write(b\"test string 1\\n\")\n        f.write(b\"test string 2\\n\")\n        f.write(b\"test string 3\\n\")\n    print(\"File test_file.txt created\")\n# Load data into buffer in Bytes format\ndef load_data_buffer_bytesio():\n    with BytesIO() as f:\n        f.write(b\"test string buffer 1\")",
+        "detail": "D5.MP_MT_Async_GIL.bytes_IO",
+        "documentation": {}
+    },
+    {
+        "label": "load_data_buffer_bytesio",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.bytes_IO",
+        "description": "D5.MP_MT_Async_GIL.bytes_IO",
+        "peekOfCode": "def load_data_buffer_bytesio():\n    with BytesIO() as f:\n        f.write(b\"test string buffer 1\")\n        f.write(b\"test string buffer 2\")\n        f.write(b\"test string buffer 3\")\n        print(\"Output buffer from BytesIO: \")\n        print(f.getvalue())\n# similar can be achieved using bytes append but above is faster\ndef load_data_buffer():\n    buffer = b\"\"",
+        "detail": "D5.MP_MT_Async_GIL.bytes_IO",
+        "documentation": {}
+    },
+    {
+        "label": "load_data_buffer",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.bytes_IO",
+        "description": "D5.MP_MT_Async_GIL.bytes_IO",
+        "peekOfCode": "def load_data_buffer():\n    buffer = b\"\"\n    buffer += b\"test string 1\"\n    buffer += b\"test string 2\"\n    buffer += b\"test string 3\"\n    print(\"Output from append Buffer: \")\n    print(buffer)\ndef load_data_stringio():\n    with StringIO() as s:\n        s.write(\"test string StringIO 1\")",
+        "detail": "D5.MP_MT_Async_GIL.bytes_IO",
+        "documentation": {}
+    },
+    {
+        "label": "load_data_stringio",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.bytes_IO",
+        "description": "D5.MP_MT_Async_GIL.bytes_IO",
+        "peekOfCode": "def load_data_stringio():\n    with StringIO() as s:\n        s.write(\"test string StringIO 1\")\n        s.write(\"test string StringIO 2\")\n        s.write(\"test string StringIO 3\")\n        print(\"Output from StringIO: \")\n        print(s.getvalue())\ndef main():\n    test_string = \"Test string data to load into StringIO object\"\n    #open create a file and write data to it",
+        "detail": "D5.MP_MT_Async_GIL.bytes_IO",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.bytes_IO",
+        "description": "D5.MP_MT_Async_GIL.bytes_IO",
+        "peekOfCode": "def main():\n    test_string = \"Test string data to load into StringIO object\"\n    #open create a file and write data to it\n    create_file()\n    # Instead of writing data to file, load it in buffer as bytes format using bytesio\n    load_data_buffer_bytesio()\n    # similar can be achieved using bytes append but above is faster\n    load_data_buffer()\n    # StringIO\n    load_data_stringio()",
+        "detail": "D5.MP_MT_Async_GIL.bytes_IO",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "D5.MP_MT_Async_GIL.bytes_IO",
+        "description": "D5.MP_MT_Async_GIL.bytes_IO",
+        "peekOfCode": "output = StringIO.StringIO()\noutput.write('First line.\\n')\nprint >>output, 'Second line.'\n# Retrieve file contents -- this will be\n# 'First line.\\nSecond line.\\n'\ncontents = output.getvalue()\n# Close object and discard memory buffer --\n# .getvalue() will now raise an exception.\noutput.close()\n'''",
+        "detail": "D5.MP_MT_Async_GIL.bytes_IO",
+        "documentation": {}
+    },
+    {
+        "label": "contents",
+        "kind": 5,
+        "importPath": "D5.MP_MT_Async_GIL.bytes_IO",
+        "description": "D5.MP_MT_Async_GIL.bytes_IO",
+        "peekOfCode": "contents = output.getvalue()\n# Close object and discard memory buffer --\n# .getvalue() will now raise an exception.\noutput.close()\n'''\ndef main():        \n    create_file() # plain old with open() file...\n    bytesIO_function()\n'''from io import BytesIO\nfrom io import StringIO",
+        "detail": "D5.MP_MT_Async_GIL.bytes_IO",
+        "documentation": {}
+    },
+    {
+        "label": "sum_square_num",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.multiprocessing_file",
+        "description": "D5.MP_MT_Async_GIL.multiprocessing_file",
+        "peekOfCode": "def sum_square_num(number):\n    res = 0 \n    for num in number:\n        print(num*num)\n        res += num*num\n    print(f\"SUM is ============> \\t {res}\")\ndef main():\n    numbers1 = [*range(1,100000)]\n    numbers2 = [*range(10,200000)]\n    start = time.time()",
+        "detail": "D5.MP_MT_Async_GIL.multiprocessing_file",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.multiprocessing_file",
+        "description": "D5.MP_MT_Async_GIL.multiprocessing_file",
+        "peekOfCode": "def main():\n    numbers1 = [*range(1,100000)]\n    numbers2 = [*range(10,200000)]\n    start = time.time()\n    sum_square_num(numbers1)\n    sum_square_num(numbers2)\n    end = time.time()\n    time1 = end- start \n    p1 = multiprocessing.Process(target=sum_square_num, args=(numbers1,))\n    p2 = multiprocessing.Process(target=sum_square_num, args=(numbers2,))",
+        "detail": "D5.MP_MT_Async_GIL.multiprocessing_file",
+        "documentation": {}
+    },
+    {
+        "label": "sum_square_num",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.multithreading",
+        "description": "D5.MP_MT_Async_GIL.multithreading",
+        "peekOfCode": "def sum_square_num(number, x=\"No thread\"):\n    res = 0 \n    for num in number:\n        print(f\"From \\t {x} : {num*num}\")\n        # time.sleep(0.1)\n        res += num*num\n    print(f\"From \\t {x} : SUM is ============> \\t {res}\")\ndef main():\n    numbers1 = [*range(1,10,1)]\n    numbers2 = [*range(10,200,10)]",
+        "detail": "D5.MP_MT_Async_GIL.multithreading",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.multithreading",
+        "description": "D5.MP_MT_Async_GIL.multithreading",
+        "peekOfCode": "def main():\n    numbers1 = [*range(1,10,1)]\n    numbers2 = [*range(10,200,10)]\n    start = time.time()\n    sum_square_num(numbers1, \"No thread1\")\n    sum_square_num(numbers2, \"No thread2\")\n    end = time.time()\n    time1 = end- start \n    t1 = threading.Thread(target=sum_square_num, args=(numbers1,\"thread1\"))\n    t2 = threading.Thread(target=sum_square_num, args=(numbers2,\"thread2\"))",
+        "detail": "D5.MP_MT_Async_GIL.multithreading",
+        "documentation": {}
+    },
+    {
+        "label": "chunking",
+        "kind": 2,
+        "importPath": "D5.MP_MT_Async_GIL.test",
+        "description": "D5.MP_MT_Async_GIL.test",
+        "peekOfCode": "def chunking(input_string, buffer=10):\n    input_stream = StringIO(input_string)\n    print(sys.getsizeof(input_stream) )\n    while True:\n        chunk = input_stream.read(buffer)\n        if not chunk:\n            break\n        print(\"Processing chunk:\", chunk)\n# def \nif __name__ == \"__main__\":",
+        "detail": "D5.MP_MT_Async_GIL.test",
+        "documentation": {}
+    },
+    {
+        "label": "Todo",
+        "kind": 6,
+        "importPath": "D6.Flask Rest.todo_app.app.models.todo",
+        "description": "D6.Flask Rest.todo_app.app.models.todo",
+        "peekOfCode": "class Todo:\n    def __init__(self, todo_id, title, description):\n        self.id = todo_id\n        self.title = title\n        self.description = description\n'''Can add __repr__ , __lt__ and __iter__ here \nBased on last week's learning, better to use dataclasses here as they autogenerate all that code\nfor you resulting in faster development time...\n'''",
+        "detail": "D6.Flask Rest.todo_app.app.models.todo",
+        "documentation": {}
+    },
+    {
+        "label": "TodoResource",
+        "kind": 6,
+        "importPath": "D6.Flask Rest.todo_app.app.resources.todo_resource",
+        "description": "D6.Flask Rest.todo_app.app.resources.todo_resource",
+        "peekOfCode": "class TodoResource(Resource):\n    def get(self):\n        parser = reqparse.RequestParser()\n        parser.add_argument('title', type=str, required=False)\n        args = parser.parse_args()\n        if args['title']:\n            filtered_todos = [todo for todo in todos.values() if args['title'].lower() in todo.title.lower()]\n            return {'todos': [todo.__dict__ for todo in filtered_todos]}\n        else:\n            return {'todos': [todo.__dict__ for todo in todos.values()]}",
+        "detail": "D6.Flask Rest.todo_app.app.resources.todo_resource",
+        "documentation": {}
+    },
+    {
+        "label": "todos",
+        "kind": 5,
+        "importPath": "D6.Flask Rest.todo_app.app.resources.todo_resource",
+        "description": "D6.Flask Rest.todo_app.app.resources.todo_resource",
+        "peekOfCode": "todos = {}\nclass TodoResource(Resource):\n    def get(self):\n        parser = reqparse.RequestParser()\n        parser.add_argument('title', type=str, required=False)\n        args = parser.parse_args()\n        if args['title']:\n            filtered_todos = [todo for todo in todos.values() if args['title'].lower() in todo.title.lower()]\n            return {'todos': [todo.__dict__ for todo in filtered_todos]}\n        else:",
+        "detail": "D6.Flask Rest.todo_app.app.resources.todo_resource",
         "documentation": {}
     }
 ]

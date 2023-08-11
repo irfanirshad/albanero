@@ -8,22 +8,25 @@ Simple multithreaded program to calculate sum of square of numbers.
 async def sum_square_num(number):
     res = 0 
     for num in number:
-        print(num*num)
+        print(f"The number is \t {num} \t {num*num}")
         res += num*num
-        # asyncio.sleep(3)
+        await asyncio.sleep(0.1)
     print(f"SUM is ============> \t {res}")
     
 
 def main():
-    numbers1 = [*range(1,100000)]
-    numbers2 = [*range(10,200000)]
+    numbers1 = [*range(1,50)]
+    numbers2 = [*range(50,100)]
     
     start = time.time()
+    #
     sum_square_num(numbers1)
     sum_square_num(numbers2)
     end = time.time()
     
     time1 = end- start 
+    print(f"Without ASYNCIO execution time is {time1} \n")
+    
     
     start = time.time()
     loop = asyncio.get_event_loop()

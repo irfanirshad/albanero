@@ -16,3 +16,6 @@ look at example2 where frozen=true but post_init() does not seem to work here...
 
 ### Frozen instances
 
+
+
+### Slots performance with dataclasses

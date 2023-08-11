@@ -5,12 +5,14 @@ Simple multithreaded program to calculate sum of square of numbers.
 '''
 
 
-def sum_square_num(number):
+def sum_square_num(number, x="No thread"):
     res = 0 
     for num in number:
-        print(num*num)
+        print(f"From \t {x} : {num*num}")
+        # time.sleep(0.1)
         res += num*num
-    print(f"SUM is ============> \t {res}")
+        
+    print(f"From \t {x} : SUM is ============> \t {res}")
     
 
 def main():
@@ -18,22 +20,23 @@ def main():
     numbers2 = [*range(10,200,10)]
     
     start = time.time()
-    sum_square_num(numbers1)
-    sum_square_num(numbers2)
+    sum_square_num(numbers1, "No thread1")
+    sum_square_num(numbers2, "No thread2")
     end = time.time()
     
     time1 = end- start 
     
-    t1 = threading.Thread(target=sum_square_num, args=(numbers1,))
-    t2 = threading.Thread(target=sum_square_num, args=(numbers2,))
+    t1 = threading.Thread(target=sum_square_num, args=(numbers1,"thread1"))
+    t2 = threading.Thread(target=sum_square_num, args=(numbers2,"thread2"))
     
     start = time.time()
     t1.start()
     t2.start()
-    end = time.time()
+    
     
     t1.join()
     t2.join()
+    end = time.time()
     
     print(f"Without multithreading execution time is {time1} \n")
 

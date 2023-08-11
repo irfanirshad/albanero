@@ -37,9 +37,10 @@ class Person:
     email_address: "list[str]" = field(default_factory=list)
     id: str = field(init=False, default_factory=generate_id)
     _search_string: str = field(init=False, repr=False)
+
     
     def __post_init__(self) -> None:
-        self._search_string = f"{self.name} {self.address}" #why is it showing an error here?
+        self._search_string = f"{self.name} {self.address}" # type: ignore #why is it showing an error here?
         
 
 
