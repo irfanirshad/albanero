@@ -53,3 +53,40 @@ If you have a non extendable set of strategies that would be preferable, but by 
 @Rawing77
 1 year ago
  @appuser  It's unfortunately not (yet) true in practice, but considering that `typing.Literal` has existed for a while now, magic strings should auto-complete just as well as enums. There is really no reason why IntelliSense can't support magic strings. It's only a matter of time until it actually does.
+
+[Taken from ArjanCode's Dictionary over if-else statement shorts video on YT]
+-x-x-x--x-x-x--x
+
+### Other RoadMaps to Follow
+
+
+1. MetaClass usage in Enum
+
+2. Enums with Flags
+
+3. Enums Clever Use cases
+
+4. When not to use Enums | Dicts over Enums 
+
+
+5. Nested Enums?
+
+```
+class Piece(Enum):
+    KING = 1
+    QUEEN = 2
+    ROOK = 3
+
+class PieceValue(Enum):
+    KING = 0
+    QUEEN = 9
+    ROOK = 5
+```
+
+
+Is there any more nested/tricks/inhertited stuff you can do with this...
+
+
+6. Pydantic Enums etc... Third party dataclasses enums....
+
+7. 

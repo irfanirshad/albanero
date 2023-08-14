@@ -12,4 +12,4 @@ people.insert_one({"name": "irfan", "age": 30})
 
 for person in people.find():
     print(person)
-    
+

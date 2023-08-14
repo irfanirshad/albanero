@@ -15,7 +15,9 @@ class AlbumSchema(Schema):
 
 
 bowie = dict(name="David Bowie")
-album = dict(artist=bowie, title="Hunky Dory", release_date=date(1971, 12, 17))
+artists_list = [dict(name="Arnie"), dict(name="Bowiew 1")]
+
+album = dict(artist=*artists_list, title="Hunky Dory", release_date=date(1971, 12, 17))
 
 schema = AlbumSchema()
 result = schema.dump(album)
@@ -32,3 +34,4 @@ Marsmallow can be used to
     - Serialize app-level objects to primitive Python types. The serialized objects can then be rendered
     to standard formats such as JSON for use in an HTTP API..
 '''
+

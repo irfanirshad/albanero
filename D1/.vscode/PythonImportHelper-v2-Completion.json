@@ -1,0 +1,92 @@
+[
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "NotFoundError",
+        "kind": 6,
+        "importPath": "Errors and Exceptions.better_exception_1",
+        "description": "Errors and Exceptions.better_exception_1",
+        "peekOfCode": "class NotFoundError(Exception):\n    pass\nclass NotAuthorizedError(Exception):\n    pass\nimport sqlite3\ndef fetch_blog_new(id: str):\n    try:\n        # connect to database\n        con = sqlite3.connect('application.db')\n        cur = con.cursor()",
+        "detail": "Errors and Exceptions.better_exception_1",
+        "documentation": {}
+    },
+    {
+        "label": "NotAuthorizedError",
+        "kind": 6,
+        "importPath": "Errors and Exceptions.better_exception_1",
+        "description": "Errors and Exceptions.better_exception_1",
+        "peekOfCode": "class NotAuthorizedError(Exception):\n    pass\nimport sqlite3\ndef fetch_blog_new(id: str):\n    try:\n        # connect to database\n        con = sqlite3.connect('application.db')\n        cur = con.cursor()\n        # execute query and fetch the data\n        cur.execute(f\"SELECT * FROM blogs where id = {id}\")",
+        "detail": "Errors and Exceptions.better_exception_1",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_blog_old",
+        "kind": 2,
+        "importPath": "Errors and Exceptions.better_exception_1",
+        "description": "Errors and Exceptions.better_exception_1",
+        "peekOfCode": "def fetch_blog_old(id: str):\n    try:\n        # connect to database\n        conn = sqlite3.connect('application.db')\n        cur = con.cursor()\n        # execute query and fetch the data\n        cur.execute(f\"SELECT * FROM blogs where id = {id}\")\n        result = cur.fetchone()\n        data = blog_lst_to_json(result)\n        return data",
+        "detail": "Errors and Exceptions.better_exception_1",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_blog_new",
+        "kind": 2,
+        "importPath": "Errors and Exceptions.better_exception_1",
+        "description": "Errors and Exceptions.better_exception_1",
+        "peekOfCode": "def fetch_blog_new(id: str):\n    try:\n        # connect to database\n        con = sqlite3.connect('application.db')\n        cur = con.cursor()\n        # execute query and fetch the data\n        cur.execute(f\"SELECT * FROM blogs where id = {id}\")\n        result = cur.fetchone()\n        if result is None:\n            raise NotFoundError(f'Unable to find id={id}')",
+        "detail": "Errors and Exceptions.better_exception_1",
+        "documentation": {}
+    },
+    {
+        "label": "SQLit",
+        "kind": 6,
+        "importPath": "Errors and Exceptions.better_exception_2",
+        "description": "Errors and Exceptions.better_exception_2",
+        "peekOfCode": "class SQLite",
+        "detail": "Errors and Exceptions.better_exception_2",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_blog_new",
+        "kind": 2,
+        "importPath": "Errors and Exceptions.better_exception_2",
+        "description": "Errors and Exceptions.better_exception_2",
+        "peekOfCode": "def fetch_blog_new(id: str):\n    try:\n        # connect to database\n        con = sqlite3.connect('application.db')\n        cur = con.cursor()\n        # execute query and fetch the data\n        cur.execute(f\"SELECT * FROM blogs where id = {id}\")\n        result = cur.fetchone()\n        if result is None:\n            raise NotFoundError(f'Unable to find id={id}')",
+        "detail": "Errors and Exceptions.better_exception_2",
+        "documentation": {}
+    },
+    {
+        "label": "UserNotFoundException",
+        "kind": 6,
+        "importPath": "Errors and Exceptions.err",
+        "description": "Errors and Exceptions.err",
+        "peekOfCode": "class UserNotFoundException(RuntimeError):\n    def __init__(self,email=None):\n        super().__init__(f\"Can't find the user with the ID: {email} ...\")\nlogBook = { \n    \"aditya@mycompany\" : \"Aditya Verma\",\n    \"snehaj@mycompany\" : \"Sneha Joshi\",\n    \"nidhi20@mycompany\" : \"Nidhi Kapoor\"\n}\nclass Login(UserNotFoundException):\n    def display(self, email):",
+        "detail": "Errors and Exceptions.err",
+        "documentation": {}
+    },
+    {
+        "label": "Login",
+        "kind": 6,
+        "importPath": "Errors and Exceptions.err",
+        "description": "Errors and Exceptions.err",
+        "peekOfCode": "class Login(UserNotFoundException):\n    def display(self, email):\n        if email in logBook:\n            print(logBook.get(email))\n        else:\n            raise UserNotFoundException(email)\ntry:\n    temp = Login()\n    temp.display(\"irfan@albanero.io\")\n    temp.display(\"nidhi20@mycompany\")",
+        "detail": "Errors and Exceptions.err",
+        "documentation": {}
+    },
+    {
+        "label": "logBook",
+        "kind": 5,
+        "importPath": "Errors and Exceptions.err",
+        "description": "Errors and Exceptions.err",
+        "peekOfCode": "logBook = { \n    \"aditya@mycompany\" : \"Aditya Verma\",\n    \"snehaj@mycompany\" : \"Sneha Joshi\",\n    \"nidhi20@mycompany\" : \"Nidhi Kapoor\"\n}\nclass Login(UserNotFoundException):\n    def display(self, email):\n        if email in logBook:\n            print(logBook.get(email))\n        else:",
+        "detail": "Errors and Exceptions.err",
+        "documentation": {}
+    }
+]
