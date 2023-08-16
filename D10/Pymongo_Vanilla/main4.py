@@ -7,10 +7,15 @@ involves using array-specific operators like $push, $pull, $addToSet, etc.
 
 $push, $pull, $addToSet, $set, and $unset operators are used to 
 modify the array field in the documents.
+
+'''
 '''
 
 
+
+
 # say we have this array 
+Concept of '''
 {
     "_id": 1,
     "name": "John",
