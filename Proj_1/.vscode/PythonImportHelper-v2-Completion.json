@@ -1,0 +1,174 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "pymongo",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "flask_app.models.User",
+        "description": "flask_app.models.User",
+        "isExtraImport": true,
+        "detail": "flask_app.models.User",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "Consumer",
+        "importPath": "confluent_kafka",
+        "description": "confluent_kafka",
+        "isExtraImport": true,
+        "detail": "confluent_kafka",
+        "documentation": {}
+    },
+    {
+        "label": "KafkaError",
+        "importPath": "confluent_kafka",
+        "description": "confluent_kafka",
+        "isExtraImport": true,
+        "detail": "confluent_kafka",
+        "documentation": {}
+    },
+    {
+        "label": "Producer",
+        "importPath": "confluent_kafka",
+        "description": "confluent_kafka",
+        "isExtraImport": true,
+        "detail": "confluent_kafka",
+        "documentation": {}
+    },
+    {
+        "label": "save_user",
+        "kind": 2,
+        "importPath": "flask_app.api.api_user",
+        "description": "flask_app.api.api_user",
+        "peekOfCode": "def save_user():\n    \"\"\"Save a single user or list of user.\n    i'll be getting a camelcase JSON here ...using pydantic i need to convert it to snake to perform validation\n    If its all good then , i convert it back to camelCase and save it to my DB\n    \"\"\"\n    data = request.json\n    query = data.get('data') # camel Case when coming in and going out\n    if not query: \n        return jsonify({\"Error\": \"Invalid request\"}), 400\n    result =  save_user_()",
+        "detail": "flask_app.api.api_user",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_users",
+        "kind": 2,
+        "importPath": "flask_app.api.api_user",
+        "description": "flask_app.api.api_user",
+        "peekOfCode": "def get_all_users():\n    '''Use my mongoDB connection and retrieve all the data in my collection'''\n    pass\nif __name__ == '__main__':\n    app.run(debug=True, port=5000)",
+        "detail": "flask_app.api.api_user",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "flask_app.api.api_user",
+        "description": "flask_app.api.api_user",
+        "peekOfCode": "app = Flask(__name__)\n# app.config['JSON_SORT_KEYS'] = False\n# not used==ing logger here. \napp.logger.setLevel(logging.DEBUG)\n# set up database connection or a mongoDB (pymongo) connection pool \n# define a route for sending messages to Kafka\n@app.route('/save_user', methods=['POST'])\ndef save_user():\n    \"\"\"Save a single user or list of user.\n    i'll be getting a camelcase JSON here ...using pydantic i need to convert it to snake to perform validation",
+        "detail": "flask_app.api.api_user",
+        "documentation": {}
+    },
+    {
+        "label": "bootstrap_servers",
+        "kind": 5,
+        "importPath": "kafka_app.consumer",
+        "description": "kafka_app.consumer",
+        "peekOfCode": "bootstrap_servers = 'kafka-1:9092'\nconsumer = Consumer({\n    'bootstrap.servers': bootstrap_servers,\n    'group.id': 'my-group',\n    'auto.offset.reset': 'earliest'\n})\ntopic = 'my-topic'\nconsumer.subscribe([topic])\nwhile True:\n    msg = consumer.poll(1.0)",
+        "detail": "kafka_app.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "consumer",
+        "kind": 5,
+        "importPath": "kafka_app.consumer",
+        "description": "kafka_app.consumer",
+        "peekOfCode": "consumer = Consumer({\n    'bootstrap.servers': bootstrap_servers,\n    'group.id': 'my-group',\n    'auto.offset.reset': 'earliest'\n})\ntopic = 'my-topic'\nconsumer.subscribe([topic])\nwhile True:\n    msg = consumer.poll(1.0)\n    if msg is None:",
+        "detail": "kafka_app.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "topic",
+        "kind": 5,
+        "importPath": "kafka_app.consumer",
+        "description": "kafka_app.consumer",
+        "peekOfCode": "topic = 'my-topic'\nconsumer.subscribe([topic])\nwhile True:\n    msg = consumer.poll(1.0)\n    if msg is None:\n        continue\n    if msg.error():\n        if msg.error().code() == KafkaError._PARTITION_EOF:\n            continue\n        print(msg.error())",
+        "detail": "kafka_app.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "bootstrap_servers",
+        "kind": 5,
+        "importPath": "kafka_app.producer",
+        "description": "kafka_app.producer",
+        "peekOfCode": "bootstrap_servers = 'kafka-1:9092'\nproducer = Producer({'bootstrap.servers': bootstrap_servers})\ntopic = 'my-topic'\nfor i in range(10):\n    value = f\"Message {i}\"\n    producer.produce(topic, value.encode('utf-8'))\n    producer.flush()\n    print(f\"Produced: {value}\")\n'''\nTODO:# The comment is describing a task to be performed. It suggests that the input should be in",
+        "detail": "kafka_app.producer",
+        "documentation": {}
+    },
+    {
+        "label": "producer",
+        "kind": 5,
+        "importPath": "kafka_app.producer",
+        "description": "kafka_app.producer",
+        "peekOfCode": "producer = Producer({'bootstrap.servers': bootstrap_servers})\ntopic = 'my-topic'\nfor i in range(10):\n    value = f\"Message {i}\"\n    producer.produce(topic, value.encode('utf-8'))\n    producer.flush()\n    print(f\"Produced: {value}\")\n'''\nTODO:# The comment is describing a task to be performed. It suggests that the input should be in\n# camelcase format, and the code should convert it to snake_case format for validation using",
+        "detail": "kafka_app.producer",
+        "documentation": {}
+    },
+    {
+        "label": "topic",
+        "kind": 5,
+        "importPath": "kafka_app.producer",
+        "description": "kafka_app.producer",
+        "peekOfCode": "topic = 'my-topic'\nfor i in range(10):\n    value = f\"Message {i}\"\n    producer.produce(topic, value.encode('utf-8'))\n    producer.flush()\n    print(f\"Produced: {value}\")\n'''\nTODO:# The comment is describing a task to be performed. It suggests that the input should be in\n# camelcase format, and the code should convert it to snake_case format for validation using\n# Pydantic. If the validation passes, the code should convert the input back to camelcase and",
+        "detail": "kafka_app.producer",
+        "documentation": {}
+    }
+]

@@ -54,7 +54,42 @@ def send_message():
     # get the current time and calculate the time difference since the last request
     current_time = datetime.now()
     time_diff = (current_time - last_request_time).total_seconds()
-    """
+    
+    if time_diff < 2 : # change number to play with the last request timeu8uuuuuuuu
+        return 'Too many requests. Try again later.', 429 
+    else:
+        # update the last request time to the current time
+        last_request_time = current_time
+        name = request.json['name']
+        age = request.json['age']
+        timestamp = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        
+        # send the message to the 'mikostudents' Kafka topic and return success response
+        producer.send('mikostudents', {'name': name, 'age': age, 'timestamp': timestamp})
+        return 'Message sent to Kafka topic'
+
+# define a route for getting information about a single student
+@app.route('/students/<int:student_id>', methods=['GET'])
+def get_student(student_id):
+    student = session.query(Student).filter_by(id=student_id).first()
+    if student:
+        return jsonify(student.to_dict())
+    else:
+        return "Student not found", 404
+    
+# define a route for getting information about all students
+@app.route('/students', methods=['GET'])
+def get_all_students():
+    students = session.query(Student).all()
+    student_list = [student.to_dict() for student in students]
+    return jsonify(student_list)
+
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
+'''
+
+"""
     1) ratelimiter condition for each request - 60secs
     2) 3 requests/minute
     {req1 ::: 4:11pm}, {req2 ::: 4:11pm}, {req3 ::: 4:11pm}
@@ -93,35 +128,4 @@ def send_message():
     """
 
     # if the time difference is less than 60 seconds, return an 429 error response else pass
-    if time_diff < 2 : # change number to play with the last request time
-        return 'Too many requests. Try again later.', 429 
-    else:
-        # update the last request time to the current time
-        last_request_time = current_time
-        name = request.json['name']
-        age = request.json['age']
-        timestamp = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-        
-        # send the message to the 'mikostudents' Kafka topic and return success response
-        producer.send('mikostudents', {'name': name, 'age': age, 'timestamp': timestamp})
-        return 'Message sent to Kafka topic'
-
-# define a route for getting information about a single student
-@app.route('/students/<int:student_id>', methods=['GET'])
-def get_student(student_id):
-    student = session.query(Student).filter_by(id=student_id).first()
-    if student:
-        return jsonify(student.to_dict())
-    else:
-        return "Student not found", 404
-    
-# define a route for getting information about all students
-@app.route('/students', methods=['GET'])
-def get_all_students():
-    students = session.query(Student).all()
-    student_list = [student.to_dict() for student in students]
-    return jsonify(student_list)
-
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+'''

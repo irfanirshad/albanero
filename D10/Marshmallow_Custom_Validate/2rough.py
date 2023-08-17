@@ -10,6 +10,10 @@ class CamelCaseSchema(Schema):
     and snake-case for its internal representation.
     """
 
+    def __init__(self, *args, **kwargs):
+        self.camel_case_output = kwargs.pop('camel_case_output', True)
+        super().__init__(*args, **kwargs)
+
     def on_bind_field(self, field_name, field_obj):
         if self.camel_case_output:
             field_obj.data_key = camelcase(field_obj.data_key or field_name)

@@ -73,7 +73,8 @@ for i in range(10):
     people_instances.append(person_instance)
 
 # Create an instance of TotalCityPopulationSchema with the list of people instances
-total_population_instance = TotalCityPopulationSchema().load({'city_name': 'Tokyo', 'country': 'Japan', 'people': people_instances})
+total_population_instance = TotalCityPopulationSchema().load({'cityName': 'Tokyo', 'country': 'Japan', 'people': people_instances})
+pprint(total_population_instance)
 
 
 '''Try this out for the camelCase pr oblem'''

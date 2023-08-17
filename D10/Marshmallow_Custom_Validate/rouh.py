@@ -11,6 +11,7 @@ class PersonSchema(Schema):
 class TotalPopulationSchema(Schema):
     city_name = fields.Str(required=True)
     country = fields.Str(required=True)
+    
     people = fields.Nested(PersonSchema, many=True)
 
 
