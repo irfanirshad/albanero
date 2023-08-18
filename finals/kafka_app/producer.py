@@ -41,7 +41,7 @@ for _ in range(10):
             "state": fake.random_element(elements=["UP", "DLH", "BLR", "WB"])
         }
     }
-    fake_data_list.append(fake_data)
+    fake_data_list.append(fake_data) 
 
 # value = json.dumps(fake_data)
 # producer.produce(topic, value.encode('utf-8'))
@@ -55,13 +55,3 @@ for fake_data in fake_data_list:
     producer.flush()
 
     print(f"Produced: {value}")
-
-'''
-TODO:# The comment is describing a task to be performed. It suggests that the input should be in
-# camelcase format, and the code should convert it to snake_case format for validation using
-# Pydantic. If the validation passes, the code should convert the input back to camelcase and
-# send it to a consumer.
-get in camelcase input and perform pydantic validation(convert to snake_case i guess? and then perform pydantic validation ) and if it passes
-then convert it back to camelcase and then send it to consumer 
-
-'''

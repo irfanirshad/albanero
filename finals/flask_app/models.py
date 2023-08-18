@@ -135,7 +135,7 @@ def get_all_data():
         print(e)
         # return jsonify({"An error occurred": e}), 500
 
-print(get_all_data())
+# print(get_all_data())
 
 
 

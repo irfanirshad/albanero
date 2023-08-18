@@ -1,0 +1,20 @@
+version: 3
+
+# Each key in services object represent a different container we wish to run
+# we build and point it to cwd which is where we can find Dockerfile 
+services:
+  web:
+    build: .
+    ports:
+      - 8080:8080
+  db:
+    image: "mysql"
+    environment:
+      - MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - db-data:/foo
+
+volumes:
+  db-data:
+
+
