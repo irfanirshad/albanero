@@ -1,0 +1,19 @@
+version: '3'
+services:
+  # Mongo service
+  mongo:
+    image: mongo:4.4
+    container_name: mongo
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: 
+      MONGO_INITDB_ROOT_PASSWORD: 
+    volumes:
+      - ./storages/mongodb:/data/db:delegated
+    deploy:
+      resources:
+        limits:
+          cpus: '8'
+          memory: 16G
+    restart: unless-stopped

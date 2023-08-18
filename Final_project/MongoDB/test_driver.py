@@ -8,7 +8,8 @@ print("Current directory:", os.getcwd())
 print("Python path:", sys.path)
 
 import pymongo
-from Final_project.flask_app.models.User import Address, PersonalDetails, User
+# from flask_app.models.User import Address, PersonalDetails, User
+from ..flask_app.models.User import User
 
 # Create instances of User, PersonalDetails, and Address
 personal_details = PersonalDetails(id=1, name="John Doe", phone=1234567890)

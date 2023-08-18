@@ -9,7 +9,7 @@ import pymongo
 # from flask_app.models.User import User
 import logging
 #xxx-xxx-xxx-xxx-xxx---IMPORTS---xxx-xxx-xxx-xxx
-
+from flask_app.models.user import User
 
 
 

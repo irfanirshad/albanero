@@ -19,6 +19,17 @@ for i in range(10):
     print(f"Produced: {value}")
 
 
+
+
+
+'''
+Over here we'll feed it fake data using Faker Module and we'll have a list of 
+valid data which will pass validation and a another list which wont and we 
+Eg:
+    correct_data = 
+
+'''
+
 '''
 TODO:# The comment is describing a task to be performed. It suggests that the input should be in
 # camelcase format, and the code should convert it to snake_case format for validation using

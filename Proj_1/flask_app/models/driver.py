@@ -14,7 +14,7 @@ import sys
 # from models.Model import Uservalue
 from pprint import pprint
 
-from flask_app.models.user import User
+from user import User
 
 def main():  # sourcery skip: extract-duplicate-method
 # testing models                
@@ -61,3 +61,20 @@ def main():  # sourcery skip: extract-duplicate-method
     
 if __name__ == "__main__":
     main()
+    
+    
+
+# validated_data_camelCase = {
+#     "personalDetails": {
+#         "name": "GeeksforGeeks",
+#         "id": 1,
+#         "phone": 9999999999,
+#     },
+#     "address": {
+#         "id": 1,
+#         "addressLine1": "Sector- 136",
+#         "pincode": 201305,
+#         "city": "Noida",
+#         "state": "UP",
+#     },
+# }

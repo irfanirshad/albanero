@@ -5,12 +5,9 @@ Exposing our API endpoints which will inturn call our services ...
 import json 
 from datetime import datetime
 from flask import Flask, request, jsonify   
-from flask_httpauth import HTTPBasicAuth
-from sqlalchemy import create_engine, Column, Integer, String, DateTime
-from sqlalchemy.ext.declarative import declarative_base
 
 import pymongo
-from models.model import User
+# from Final_project.flask_app.models.User import User
 import logging
 #xxx-xxx-xxx-xxx-xxx---IMPORTS---xxx-xxx-xxx-xxx
 
@@ -42,7 +39,7 @@ def save_user():
     if not query: 
         return jsonify({"Error": "Invalid request"}), 400
     
-    result =  call_service_method()
+    result =  save_user_()
     return jsonify(result)
 
 
@@ -52,8 +49,6 @@ def save_user():
 def get_all_users():
     '''Use my mongoDB connection and retrieve all the data in my collection'''
     pass
-
-
 
 
 

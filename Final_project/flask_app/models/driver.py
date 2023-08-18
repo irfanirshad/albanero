@@ -9,7 +9,8 @@ our endpoints ...
 
 import sys
 # sys.path.append('/home/albanero/github_repos/albanero/Final_project/flask_app/models/Model.py')
-from model import User
+from flask_app.models.User import User
+
 # from models.Model import Uservalue
 from pprint import pprint
 

@@ -4,7 +4,7 @@ consumer-save and @app.route('/api-save') methods....
 '''
 from pymongo import MongoClient
 from pymongo.collection import Collection
-from flask_app.models.model import User
+from Final_project.flask_app.models.User import User
 
 class DB:
     def __init__(self):

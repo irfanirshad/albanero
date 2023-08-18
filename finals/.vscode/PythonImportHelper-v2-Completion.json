@@ -1,0 +1,476 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "PositiveInt",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "root_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "constr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "PositiveInt",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "root_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "constr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "save_data",
+        "kind": 2,
+        "importPath": "flask_app.api",
+        "description": "flask_app.api",
+        "peekOfCode": "def save_data():\n    try:\n        data = request.json\n        validated_data = User.model_validate_json(data)\n        document = validated_data.model_dump()  # Convert Pydantic model to dictionary\n        collection.insert_one(document)\n        return jsonify({\"message\": \"Data saved successfully\"}), 201\n    except ValidationError as e:\n        return jsonify({\"An Error occured while validating the data. Please try again\": str(e)}), 400\n    except Exception as e:",
+        "detail": "flask_app.api",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_data",
+        "kind": 2,
+        "importPath": "flask_app.api",
+        "description": "flask_app.api",
+        "peekOfCode": "def get_all_data():\n    try:\n        all_data = list(collection.find({}))\n        return jsonify(all_data), 200\n    except Exception as e:\n        return jsonify({\"error\": \"An error occurred\"}), 500\nif __name__ == \"__main__\":\n    app.run(debug=True)",
+        "detail": "flask_app.api",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "flask_app.api",
+        "description": "flask_app.api",
+        "peekOfCode": "app = Flask(__name__)\n# Configure MongoDB connection\nclient = MongoClient(\"mongodb://localhost:27017/\")\ndb = client[\"test_db\"]  # Replace 'test_db' with your database name\ncollection = db[\"users\"]  # Replace 'users' with your collection name\n@app.route(\"/save_data\", methods=[\"POST\"])\ndef save_data():\n    try:\n        data = request.json\n        validated_data = User.model_validate_json(data)",
+        "detail": "flask_app.api",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "flask_app.api",
+        "description": "flask_app.api",
+        "peekOfCode": "client = MongoClient(\"mongodb://localhost:27017/\")\ndb = client[\"test_db\"]  # Replace 'test_db' with your database name\ncollection = db[\"users\"]  # Replace 'users' with your collection name\n@app.route(\"/save_data\", methods=[\"POST\"])\ndef save_data():\n    try:\n        data = request.json\n        validated_data = User.model_validate_json(data)\n        document = validated_data.model_dump()  # Convert Pydantic model to dictionary\n        collection.insert_one(document)",
+        "detail": "flask_app.api",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "flask_app.api",
+        "description": "flask_app.api",
+        "peekOfCode": "db = client[\"test_db\"]  # Replace 'test_db' with your database name\ncollection = db[\"users\"]  # Replace 'users' with your collection name\n@app.route(\"/save_data\", methods=[\"POST\"])\ndef save_data():\n    try:\n        data = request.json\n        validated_data = User.model_validate_json(data)\n        document = validated_data.model_dump()  # Convert Pydantic model to dictionary\n        collection.insert_one(document)\n        return jsonify({\"message\": \"Data saved successfully\"}), 201",
+        "detail": "flask_app.api",
+        "documentation": {}
+    },
+    {
+        "label": "collection",
+        "kind": 5,
+        "importPath": "flask_app.api",
+        "description": "flask_app.api",
+        "peekOfCode": "collection = db[\"users\"]  # Replace 'users' with your collection name\n@app.route(\"/save_data\", methods=[\"POST\"])\ndef save_data():\n    try:\n        data = request.json\n        validated_data = User.model_validate_json(data)\n        document = validated_data.model_dump()  # Convert Pydantic model to dictionary\n        collection.insert_one(document)\n        return jsonify({\"message\": \"Data saved successfully\"}), 201\n    except ValidationError as e:",
+        "detail": "flask_app.api",
+        "documentation": {}
+    },
+    {
+        "label": "save_data",
+        "kind": 2,
+        "importPath": "flask_app.api_rough",
+        "description": "flask_app.api_rough",
+        "peekOfCode": "def save_data():\n    try:\n        data = request.json\n        validated_data = User.parse_obj(data)\n        document = validated_data.dict()  # Convert Pydantic model to dictionary\n        collection.insert_one(document)\n        return jsonify({\"message\": \"Data saved successfully\"}), 201\n    except ValidationError as e:\n        return jsonify({\"error\": str(e)}), 400\n    except Exception as e:",
+        "detail": "flask_app.api_rough",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_data",
+        "kind": 2,
+        "importPath": "flask_app.api_rough",
+        "description": "flask_app.api_rough",
+        "peekOfCode": "def get_all_data():\n    try:\n        all_data = list(collection.find({}))\n        return jsonify(all_data), 200\n    except Exception as e:\n        return jsonify({\"error\": \"An error occurred\"}), 500\nif __name__ == \"__main__\":\n    app.run(debug=True)",
+        "detail": "flask_app.api_rough",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "flask_app.api_rough",
+        "description": "flask_app.api_rough",
+        "peekOfCode": "app = Flask(__name__)\n# Configure MongoDB connection\nclient = MongoClient(\"mongodb://localhost:27017/\")\ndb = client[\"your_database_name\"]\ncollection = db[\"your_collection_name\"]\n@app.route(\"/save_data\", methods=[\"POST\"])\ndef save_data():\n    try:\n        data = request.json\n        validated_data = User.parse_obj(data)",
+        "detail": "flask_app.api_rough",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "flask_app.api_rough",
+        "description": "flask_app.api_rough",
+        "peekOfCode": "client = MongoClient(\"mongodb://localhost:27017/\")\ndb = client[\"your_database_name\"]\ncollection = db[\"your_collection_name\"]\n@app.route(\"/save_data\", methods=[\"POST\"])\ndef save_data():\n    try:\n        data = request.json\n        validated_data = User.parse_obj(data)\n        document = validated_data.dict()  # Convert Pydantic model to dictionary\n        collection.insert_one(document)",
+        "detail": "flask_app.api_rough",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "flask_app.api_rough",
+        "description": "flask_app.api_rough",
+        "peekOfCode": "db = client[\"your_database_name\"]\ncollection = db[\"your_collection_name\"]\n@app.route(\"/save_data\", methods=[\"POST\"])\ndef save_data():\n    try:\n        data = request.json\n        validated_data = User.parse_obj(data)\n        document = validated_data.dict()  # Convert Pydantic model to dictionary\n        collection.insert_one(document)\n        return jsonify({\"message\": \"Data saved successfully\"}), 201",
+        "detail": "flask_app.api_rough",
+        "documentation": {}
+    },
+    {
+        "label": "collection",
+        "kind": 5,
+        "importPath": "flask_app.api_rough",
+        "description": "flask_app.api_rough",
+        "peekOfCode": "collection = db[\"your_collection_name\"]\n@app.route(\"/save_data\", methods=[\"POST\"])\ndef save_data():\n    try:\n        data = request.json\n        validated_data = User.parse_obj(data)\n        document = validated_data.dict()  # Convert Pydantic model to dictionary\n        collection.insert_one(document)\n        return jsonify({\"message\": \"Data saved successfully\"}), 201\n    except ValidationError as e:",
+        "detail": "flask_app.api_rough",
+        "documentation": {}
+    },
+    {
+        "label": "StateTypes",
+        "kind": 6,
+        "importPath": "flask_app.models",
+        "description": "flask_app.models",
+        "peekOfCode": "class StateTypes(str, Enum):\n    DELHI = \"DLH\"\n    UTTAR_PRADESH = \"UP\"\n    BENGALURU = \"BLR\"\n    WEST_BENGAL = \"WB\"\nclass PersonalDetails(BaseModel):\n    id: int\n    name: constr(min_length=2, max_length=25)\n    phone: PositiveInt\n    @field_validator(\"phone\")",
+        "detail": "flask_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalDetails",
+        "kind": 6,
+        "importPath": "flask_app.models",
+        "description": "flask_app.models",
+        "peekOfCode": "class PersonalDetails(BaseModel):\n    id: int\n    name: constr(min_length=2, max_length=25)\n    phone: PositiveInt\n    @field_validator(\"phone\")\n    def phone_length(cls, v):\n        if len(str(v)) != 10:\n            raise ValueError(\"Phone number must be of ten digits\")\n        return v\n    class Config:",
+        "detail": "flask_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Address",
+        "kind": 6,
+        "importPath": "flask_app.models",
+        "description": "flask_app.models",
+        "peekOfCode": "class Address(BaseModel):\n    id: int\n    address_line_1: constr(max_length=50)\n    address_line_2: Optional[constr(max_length=50)] = None\n    pincode: PositiveInt\n    city: constr(max_length=30)\n    state: StateTypes\n    @validator(\"pincode\")\n    def pincode_length(cls, v):\n        if len(str(v)) != 6:",
+        "detail": "flask_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "flask_app.models",
+        "description": "flask_app.models",
+        "peekOfCode": "class User(BaseModel):\n    personal_details: PersonalDetails\n    address: Address\n    @root_validator(skip_on_failure=True)\n    def check_id(cls, values):\n        personal_details: PersonalDetails = values.get(\"personal_details\")\n        address: Address = values.get(\"address\")\n        if personal_details.id != address.id:\n            raise ValueError(\"Address ID should be same as Personal ID\")\n        return values",
+        "detail": "flask_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "to_pascal",
+        "kind": 2,
+        "importPath": "flask_app.models",
+        "description": "flask_app.models",
+        "peekOfCode": "def to_pascal(snake: str) -> str:\n    \"\"\"Convert a snake_case string to PascalCase\"\"\"\n    camel = snake.title()\n    return re.sub('([0-9A-Za-z])_(?=[0-9A-Z])', lambda m: m.group(1), camel)\ndef to_camel(snake: str) -> str:\n    ''' Convert a snake_case string to camelCase.'''\n    camel = to_pascal(snake)\n    return re.sub('(^_*[A-Z])', lambda m: m.group(1).lower(), camel)\ndef to_snake(camel: str) -> str:\n    \"\"\"Convert a PascalCase or camelCase string to snake_case.",
+        "detail": "flask_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "to_camel",
+        "kind": 2,
+        "importPath": "flask_app.models",
+        "description": "flask_app.models",
+        "peekOfCode": "def to_camel(snake: str) -> str:\n    ''' Convert a snake_case string to camelCase.'''\n    camel = to_pascal(snake)\n    return re.sub('(^_*[A-Z])', lambda m: m.group(1).lower(), camel)\ndef to_snake(camel: str) -> str:\n    \"\"\"Convert a PascalCase or camelCase string to snake_case.\n    Args:\n        camel: The string to convert.\n    Returns:\n        The converted string in snake_case.",
+        "detail": "flask_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "to_snake",
+        "kind": 2,
+        "importPath": "flask_app.models",
+        "description": "flask_app.models",
+        "peekOfCode": "def to_snake(camel: str) -> str:\n    \"\"\"Convert a PascalCase or camelCase string to snake_case.\n    Args:\n        camel: The string to convert.\n    Returns:\n        The converted string in snake_case.\n    \"\"\"\n    snake = re.sub(r'([a-zA-Z])([0-9])', lambda m: f'{m.group(1)}_{m.group(2)}', camel)\n    snake = re.sub(r'([a-z0-9])([A-Z])', lambda m: f'{m.group(1)}_{m.group(2)}', snake)\n    return snake.lower()",
+        "detail": "flask_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "check_validation",
+        "kind": 2,
+        "importPath": "flask_app.models",
+        "description": "flask_app.models",
+        "peekOfCode": "def check_validation(user: User) -> User | str:\n# Convert camelcase keys to snakecase using Pydantic's alias_generator\n    try:\n        snakecase_data = User.model_validate(validated_data_camelCase)\n    except ValidationError as e:\n        print(f\"An error occured while validation. {e} \")\n    else:\n        print(\"Your model has undergone validation.\")\n    finally:\n        print(\" The model has been successfully validated. Proceeding to send to the database for storage. \")",
+        "detail": "flask_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "validated_data_camelCase",
+        "kind": 5,
+        "importPath": "flask_app.models",
+        "description": "flask_app.models",
+        "peekOfCode": "validated_data_camelCase = {\n    \"personalDetails\": {\n        \"name\": \"GeeksforGeeks\",\n        \"id\": 1,\n        \"phone\": 9999999999,\n    },\n    \"address\": {\n        \"id\": 1,\n        \"addressLine1\": \"Sector- 136\",\n        \"pincode\": 201305,",
+        "detail": "flask_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "not_valid_data",
+        "kind": 5,
+        "importPath": "flask_app.models",
+        "description": "flask_app.models",
+        "peekOfCode": "not_valid_data = {\n        \"personal_details\": {\n            \"name\": \"GeeksforGeeks\",\n            \"id\": 1,\n            \"phone\": 9999999999,\n        },\n        \"address\": {\n            \"id\": 1,\n            \"address_line_1\": \"Sector- 136\",\n            \"pincode\": 201305,",
+        "detail": "flask_app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Position",
+        "kind": 6,
+        "importPath": "flask_app.models2",
+        "description": "flask_app.models2",
+        "peekOfCode": "class Position(BaseModel):\n    account_id: str = Field(alias='AccountID')\n    average_price: str = Field(alias='AveragePrice')\n    asset_type: str = Field(alias='AssetType')\n    last: str = Field(alias='Last')\n    bid: str = Field(alias='Bid')\n    ask: str = Field(alias='Ask')\n    conversion_rate: str = Field(alias='ConversionRate')\n    day_trade_requirement: str = Field(alias='DayTradeRequirement')\n    initial_requirement: str = Field(alias='InitialRequirement')",
+        "detail": "flask_app.models2",
+        "documentation": {}
+    },
+    {
+        "label": "pos2",
+        "kind": 5,
+        "importPath": "flask_app.models2",
+        "description": "flask_app.models2",
+        "peekOfCode": "pos2 = Position(AccountID='10', AveragePrice='100.00', AssetType='Equity', \n                Last='105.00', Bid='102.00', Ask='106.00', ConversionRate='1.00',\n                DayTradeRequirement='50.00', InitialRequirement='100.00',\n                PositionID='123', LongShort='Long', Quantity=100, Symbol='AAPL',\n                Timestamp='2023-08-18T12:00:00', TodaysProfitLoss='10.00',\n                TotalCost='10000.00', MarketValue='10500.00', MarkToMarketPrice='105.50',\n                UnrealizedProfitLoss='5.00', UnrealizedProfitLossPercent='0.05',\n                UnrealizedProfitLossQty='50.00')\n# pos1 = Position({\n#     \"account_id\": \"10\",",
+        "detail": "flask_app.models2",
+        "documentation": {}
+    },
+    {
+        "label": "pos1",
+        "kind": 5,
+        "importPath": "flask_app.models2",
+        "description": "flask_app.models2",
+        "peekOfCode": "pos1 = Position(account_id='10', average_price='100.00', asset_type='Equity', \n                last='105.00', bid='102.00', ask='106.00', conversion_rate='1.00',\n                day_trade_requirement='50.00', initial_requirement='100.00',\n                position_id='123', long_short='Long', quantity=100, symbol='AAPL',\n                timestamp='2023-08-18T12:00:00', todays_profit_loss='10.00',\n                total_cost='10000.00', market_value='10500.00', mark_to_market_price='105.50',\n                unrealized_profit_loss='5.00', unrealized_profit_loss_percent='0.05',\n                unrealized_profit_loss_qty='50.00')\nprint(\"POS 1\")\n# print(pos1.model_dump())",
+        "detail": "flask_app.models2",
+        "documentation": {}
+    }
+]
