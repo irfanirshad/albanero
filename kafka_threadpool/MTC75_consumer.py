@@ -15,12 +15,12 @@ from termcolor import colored
 ACTIVE_THREAD_COUNT = 0
 
 
-executor = concurrent.futures.ThreadPoolExecutor(max_workers=12)
+executor = concurrent.futures.ThreadPoolExecutor(max_workers=16)
 
 
 
 # Define the semaphore and timer
-max_thread_count = 8
+max_thread_count = 16
 thread_count_semaphore = threading.Semaphore(max_thread_count)
 pause_interval = 2  # seconds
 
