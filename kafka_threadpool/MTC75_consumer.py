@@ -48,7 +48,8 @@ def consumer_start():
         3. When condition 'MTC75' is hit, consumer enters a paused state until it's 'cured'. 
         4. Keyboard Interrupt will handle shutting down in a graceful manner where we wait for all our exectutor to shutdown ...
 
-        //testing git ssh conn
+        //testing git ssh conn1
+        //test 2
     '''
     bootstrap_servers = "kafka-1:9092"
     topic = "my-topic1"
