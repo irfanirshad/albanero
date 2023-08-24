@@ -47,6 +47,8 @@ def consumer_start():
         2. Once we hit the limit, we call consumer.pause() where we're essentially waiting for our threads to come back up ...
         3. When condition 'MTC75' is hit, consumer enters a paused state until it's 'cured'. 
         4. Keyboard Interrupt will handle shutting down in a graceful manner where we wait for all our exectutor to shutdown ...
+
+        
     '''
     bootstrap_servers = "kafka-1:9092"
     topic = "my-topic1"
