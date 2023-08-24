@@ -17,7 +17,8 @@ topic = 'my-topic'
 # for i in range(10):
 #     value = f"Message {i}"
 #     producer.produce(topic, value.encode('utf-8'))
-#     producer.flush()
+#     producer.flush().
+
 
 #     print(f"Produced: {value}")
 

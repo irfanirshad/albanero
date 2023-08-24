@@ -139,24 +139,24 @@ def get_all_data():
 
 
 
-# def save_data(data):
-#     try:
-#         # data = request.json
-#         validated_data = User.model_validate(data)
-#         document = validated_data.model_dump()  # Convert Pydantic model to dictionary
-#         # collection.insert_one(document)
-#         print("saving if all good")
-#         # return jsonify({"message": "Data saved successfully"}), 201
-#         print("return")
-#     except ValidationError as e:
-#         # return jsonify({"An Error occured while validating the data. Please try again": str(e)}), 400
-#         print(f"Validation ERRORORO   :  {e}")
-#     except Exception as e:
-#         print(f"Exception:  {e}")
-#         # return jsonify({"error": "An error occurred"}), 500
+def save_data(data):
+    try:
+        # data = request.json
+        validated_data = User.model_validate(data)
+        document = validated_data.model_dump()  # Convert Pydantic model to dictionary
+        # collection.insert_one(document)
+        print("saving if all good")
+        # return jsonify({"message": "Data saved successfully"}), 201
+        print("return")
+    except ValidationError as e:
+        # return jsonify({"An Error occured while validating the data. Please try again": str(e)}), 400
+        print(f"Validation ERRORORO   :  {e}")
+    except Exception as e:
+        print(f"Exception:  {e}")
+        # return jsonify({"error": "An error occurred"}), 500
 
 
-# print(save_data(validated_data_camelCase))
+print(save_data(validated_data_camelCase))
 
 
 
@@ -178,3 +178,22 @@ def get_all_data():
 
 
 # print(snakecase_data.model_dump_json())  # Print the snakecase JSON
+
+
+'''
+curl -X POST -H "Content-Type: application/json" -d '{
+  "personalDetails": {
+    "name": "TestUser",
+    "id": 2,
+    "phone": 1234567890
+  },
+  "address": {
+    "id": 2,
+    "addressLine1": "123 Main Street",
+    "pincode": 987654,
+    "city": "Example City",
+    "state": "DLH"
+  }
+}' http://localhost:8000/save_data1
+
+'''
