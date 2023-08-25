@@ -1,6 +1,21 @@
 # MTC75 - Maximum Thread Control 75 App
 
-This is a sample demo of a kafka-producer-consumer where upon reaching 100% of usage of specified  
+This is a sample demo of a kafka-producer-consumer where upon reaching 75% of usage of assigned threads, the kafka consumer is paused untill all the threads are free; Upon being free, the consumer is resumed from where it stopped off .
+
+Feel free to increase/decrease the thread count or the threshold. 
+
+I have used different colors(from termcolor module) to differentiate the messages from one another as there will be a lot of things being spit out on your
+terminal if you run this app AS IS(default).
+
+Increase the time.sleep() to make sense of what's happening and slow down the activity. Decrease the time.sleep() to benchmark stuff. 
+
+Thank you for your time.
+
+
+
+
+
+
 
 ## Executor, Max_thread_count , Thread_count_semaphore
   All of these components are needed and serve distinct purposes in managing your threaded processing. Let me explain each of them:
