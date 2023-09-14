@@ -35,6 +35,9 @@ k
 
  # How to run this?
 
+Using the `docker-compose.yml` file we spin up kafka by typing in the commands
+`sudo docker-compose --compatibility up -d --build` . 
+
 Open up 2 terminals . Create the topic using the  ```create topic.py``` script. Then, Install the packages. 
 ```python3 pip3 install confluent_kafka, faker, termcolor. ``` 
 
